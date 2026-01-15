@@ -1,0 +1,48 @@
+# Site settings
+title: NOLA Bach
+description: The ultimate guide to planning your bachelorette party in New Orleans. Where to stay, what to do, and how to make it unforgettable.
+url: "https://nolabach.com"
+baseurl: ""
+
+# SEO
+author: NOLA Bach
+twitter:
+  card: summary_large_image
+social:
+  name: NOLA Bach
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+highlighter: rouge
+
+# Collections
+collections:
+  guides:
+    output: true
+    permalink: /guides/:name/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "guides"
+    values:
+      layout: "guide"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Plugins (GitHub Pages supported)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap

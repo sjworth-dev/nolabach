@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="guide-header">
+  <div class="container-narrow">
+    <span class="script">{{ page.category | default: "Guide" }}</span>
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}
+    <p class="hero-subtitle">{{ page.subtitle }}</p>
+    {% endif %}
+  </div>
+</div>
+
+<article class="guide-content">
+  <div class="container-narrow">
+    {{ content }}
+  </div>
+</article>
+
+{% if page.cta != false %}
+<section class="cta-section">
+  <div class="container">
+    <h2>Need a Place for Your Crew?</h2>
+    <p>Check out our hand-picked properties that sleep 15-30 guests.</p>
+    <a href="/where-to-stay/" class="btn btn-primary">See Properties</a>
+  </div>
+</section>
+{% endif %}

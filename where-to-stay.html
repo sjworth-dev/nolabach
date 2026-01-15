@@ -1,0 +1,424 @@
+---
+layout: default
+title: Where to Stay - Large Group Accommodations in New Orleans
+description: Private villas and vacation rentals in New Orleans that actually fit your whole bachelorette crew. Pools, multiple bedrooms, and no noise complaints.
+---
+
+<style>
+.stay-hero {
+  padding: calc(80px + var(--spacing-xl)) 0 var(--spacing-lg);
+  background: linear-gradient(135deg, var(--color-rose-light) 0%, var(--color-background) 100%);
+  text-align: center;
+}
+
+.stay-intro {
+  background: var(--color-white);
+  padding: var(--spacing-lg) 0;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+  align-items: center;
+}
+
+.intro-text h2 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.check-list {
+  list-style: none;
+  margin-top: var(--spacing-md);
+}
+
+.check-list li {
+  padding: var(--spacing-xs) 0;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.check-list li::before {
+  content: '✓';
+  color: var(--color-accent);
+  font-weight: bold;
+}
+
+.properties-section {
+  padding: var(--spacing-xl) 0;
+  background: var(--color-background);
+}
+
+.property-card-large {
+  background: var(--color-white);
+  margin-bottom: var(--spacing-lg);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.property-card-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.property-card-large:nth-child(even) .property-card-inner {
+  direction: rtl;
+}
+
+.property-card-large:nth-child(even) .property-card-inner > * {
+  direction: ltr;
+}
+
+.property-card-image {
+  min-height: 400px;
+  background: var(--color-rose-light);
+  position: relative;
+}
+
+.property-card-image .placeholder {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  background: linear-gradient(135deg, var(--color-secondary) 0%, #444 100%);
+}
+
+.property-card-details {
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.property-card-details .script {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.property-card-details h3 {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.property-stats {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  font-family: var(--font-headline);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  display: block;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.property-amenities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-md);
+}
+
+.amenity-tag {
+  background: var(--color-rose-light);
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  color: var(--color-secondary);
+}
+
+.why-not-hotel {
+  background: var(--color-secondary);
+  color: var(--color-white);
+  padding: var(--spacing-xl) 0;
+}
+
+.why-not-hotel h2 {
+  color: var(--color-white);
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.comparison-col {
+  padding: var(--spacing-md);
+}
+
+.comparison-col h3 {
+  color: var(--color-white);
+  margin-bottom: var(--spacing-md);
+  font-size: 1.5rem;
+}
+
+.comparison-col.hotel {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.comparison-col.villa {
+  background: rgba(232, 180, 184, 0.1);
+  border: 1px solid var(--color-primary);
+}
+
+.comparison-list {
+  list-style: none;
+}
+
+.comparison-list li {
+  padding: var(--spacing-xs) 0;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: rgba(255,255,255,0.8);
+}
+
+.comparison-col.hotel .comparison-list li::before {
+  content: '✗';
+  color: #e74c3c;
+}
+
+.comparison-col.villa .comparison-list li::before {
+  content: '✓';
+  color: var(--color-primary);
+}
+
+.faq-section {
+  padding: var(--spacing-xl) 0;
+  background: var(--color-white);
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--color-rose-light);
+  padding: var(--spacing-md) 0;
+}
+
+.faq-item h4 {
+  margin-bottom: var(--spacing-xs);
+}
+
+.faq-item p {
+  color: var(--color-text-light);
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .intro-grid,
+  .property-card-inner,
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .property-card-large:nth-child(even) .property-card-inner {
+    direction: ltr;
+  }
+
+  .property-card-image {
+    min-height: 250px;
+  }
+}
+</style>
+
+<section class="stay-hero">
+  <div class="container">
+    <span class="script">Where Everyone Fits</span>
+    <h1>Large Group Accommodations</h1>
+    <p class="hero-subtitle">Private villas with pools, multiple bedrooms, and space for your whole crew. No hotel rooms. No noise complaints.</p>
+  </div>
+</section>
+
+<section class="stay-intro">
+  <div class="container">
+    <div class="intro-grid">
+      <div class="intro-text">
+        <h2>Stop Splitting Into 5 Hotel Rooms</h2>
+        <p>The best part of a bachelorette is being together. But when you're spread across different hotel floors, trading room keys, and tiptoeing past strangers at 2am—it's not the same.</p>
+        <p>Our recommended properties keep everyone under one roof, with space to actually hang out.</p>
+        <ul class="check-list">
+          <li>Private heated pools</li>
+          <li>6-8+ bedrooms</li>
+          <li>Full kitchens</li>
+          <li>Outdoor spaces for groups</li>
+          <li>Walking distance to the action</li>
+        </ul>
+      </div>
+      <div class="intro-image">
+        <div style="background: linear-gradient(135deg, var(--color-rose-light) 0%, var(--color-primary) 100%); height: 400px; display: flex; align-items: center; justify-content: center; font-size: 4rem;">🏊‍♀️</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="properties-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="script">Our Picks</span>
+      <h2>Properties That Work for Bach Parties</h2>
+    </div>
+
+    <div id="castleday" class="property-card-large">
+      <div class="property-card-inner">
+        <div class="property-card-image">
+          <div class="placeholder">🏰</div>
+        </div>
+        <div class="property-card-details">
+          <span class="script">Featured Property</span>
+          <h3>Castleday Retreats</h3>
+          <div class="property-stats">
+            <div class="stat">
+              <span class="stat-number">20+</span>
+              <span class="stat-label">Guests</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">8</span>
+              <span class="stat-label">Bedrooms</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">1</span>
+              <span class="stat-label">Private Pool</span>
+            </div>
+          </div>
+          <p>A stunning retreat perfect for large groups. Multiple living spaces, a gorgeous private pool, and enough room for everyone to spread out. Located minutes from the French Quarter.</p>
+          <div class="property-amenities">
+            <span class="amenity-tag">Private Pool</span>
+            <span class="amenity-tag">Hot Tub</span>
+            <span class="amenity-tag">Full Kitchen</span>
+            <span class="amenity-tag">Outdoor Dining</span>
+            <span class="amenity-tag">Parking</span>
+            <span class="amenity-tag">Game Room</span>
+          </div>
+          <a href="https://castledayretreats.com" class="btn btn-primary" target="_blank">View Property</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="thesyd" class="property-card-large">
+      <div class="property-card-inner">
+        <div class="property-card-image">
+          <div class="placeholder">🏠</div>
+        </div>
+        <div class="property-card-details">
+          <span class="script">Featured Property</span>
+          <h3>The Syd</h3>
+          <div class="property-stats">
+            <div class="stat">
+              <span class="stat-number">16</span>
+              <span class="stat-label">Guests</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">6</span>
+              <span class="stat-label">Bedrooms</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">1</span>
+              <span class="stat-label">Courtyard</span>
+            </div>
+          </div>
+          <p>A beautifully designed property with New Orleans charm. Features a private courtyard, modern amenities, and thoughtful spaces for groups to gather or find quiet moments.</p>
+          <div class="property-amenities">
+            <span class="amenity-tag">Private Courtyard</span>
+            <span class="amenity-tag">Modern Design</span>
+            <span class="amenity-tag">Full Kitchen</span>
+            <span class="amenity-tag">Walkable Location</span>
+            <span class="amenity-tag">Multiple Lounges</span>
+          </div>
+          <a href="https://thesyd.com" class="btn btn-primary" target="_blank">View Property</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="why-not-hotel">
+  <div class="container">
+    <h2>Why Not a Hotel?</h2>
+    <div class="comparison-grid">
+      <div class="comparison-col hotel">
+        <h3>Hotel Rooms</h3>
+        <ul class="comparison-list">
+          <li>Split into 4-5 separate rooms</li>
+          <li>Tiny bathrooms, zero counter space</li>
+          <li>No pool (or crowded shared pool)</li>
+          <li>Can't be loud after 10pm</li>
+          <li>No kitchen—eating out every meal</li>
+          <li>$200-400/night per room</li>
+        </ul>
+      </div>
+      <div class="comparison-col villa">
+        <h3>Private Villa</h3>
+        <ul class="comparison-list">
+          <li>Everyone under one roof</li>
+          <li>Multiple bathrooms, plenty of space</li>
+          <li>Your own private pool</li>
+          <li>No neighbors to disturb</li>
+          <li>Full kitchen for meal prep</li>
+          <li>Often cheaper per person</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section">
+  <div class="container-narrow">
+    <div class="section-header">
+      <span class="script">Questions?</span>
+      <h2>Booking FAQ</h2>
+    </div>
+
+    <div class="faq-item">
+      <h4>How far in advance should we book?</h4>
+      <p>For popular weekends (spring, fall, Mardi Gras season), book 3-6 months ahead. These properties go fast for large groups.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>What's the typical cost per person?</h4>
+      <p>With 15-20 people splitting a villa, expect $100-200 per person per night. Often cheaper than hotels, with way more space.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>Is there a minimum stay?</h4>
+      <p>Most properties require a 2-3 night minimum on weekends. Perfect for a Friday-Sunday bach trip.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>Can we have a party at the property?</h4>
+      <p>These properties are specifically chosen because they can handle groups. Private pools, outdoor spaces, and no shared walls. Just be respectful of the space.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>How do deposits and payments work?</h4>
+      <p>Typically a 50% deposit to reserve, with the balance due 30-60 days before arrival. One person books, then Venmo request everyone else.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Ready to Book?</h2>
+    <p>Have questions about which property is right for your group? We're happy to help.</p>
+    <a href="mailto:hello@nolabach.com" class="btn btn-primary">Contact Us</a>
+  </div>
+</section>
