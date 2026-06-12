@@ -1,8 +1,9 @@
 # Site settings
 title: NOLA Bach
 description: The ultimate guide to planning your bachelorette party in New Orleans. Where to stay, what to do, and how to make it unforgettable.
-url: "https://nolabach.com"
+url: "https://nolabachguide.com"
 baseurl: ""
+image: /assets/images/castleday-aerial.jpg
 
 # SEO
 author: NOLA Bach
@@ -33,6 +34,7 @@ defaults:
       path: ""
     values:
       layout: "default"
+      image: /assets/images/castleday-aerial.jpg
 
 # Exclude from build
 exclude:

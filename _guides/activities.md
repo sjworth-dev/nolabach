@@ -177,4 +177,4 @@ Dinner cruise on the Mississippi with live jazz. Touristy but romantic. Good for
 
 ---
 
-Need help deciding? [Contact us](/contact/) and we'll help you plan based on your group's vibe.
+Need help deciding? Check our [FAQ](/faq/) or start with the [sample itinerary](/guides/itinerary/).

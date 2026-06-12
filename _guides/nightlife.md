@@ -185,4 +185,4 @@ Bacchanal Wine → Bywater bars → Early-ish night
 
 ---
 
-Questions about planning your nights out? [Contact us](/contact/).
+Questions about planning your nights out? Start with the [sample itinerary](/guides/itinerary/).

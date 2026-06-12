@@ -390,4 +390,4 @@ Now go make it happen.
 
 ---
 
-Questions about coordinating your group? [Reach out](/contact/) and we'll help.
+Questions about coordinating your group? Our [FAQ](/faq/) covers the most common ones.

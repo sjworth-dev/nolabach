@@ -204,4 +204,4 @@ Late brunch before departing, or casual spot like Katie's
 
 ---
 
-Want personalized recommendations based on your group? [Contact us](/contact/).
+Want more ideas for your group? See the [sample itinerary](/guides/itinerary/).
